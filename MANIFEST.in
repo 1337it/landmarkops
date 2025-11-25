@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include landmarkops *.css
+recursive-include landmarkops *.csv
+recursive-include landmarkops *.html
+recursive-include landmarkops *.ico
+recursive-include landmarkops *.js
+recursive-include landmarkops *.json
+recursive-include landmarkops *.md
+recursive-include landmarkops *.png
+recursive-include landmarkops *.py
+recursive-include landmarkops *.svg
+recursive-include landmarkops *.txt
+recursive-exclude landmarkops *.pyc

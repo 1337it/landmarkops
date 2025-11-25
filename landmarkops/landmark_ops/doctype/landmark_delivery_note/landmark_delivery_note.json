@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2025-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "driver_section",
+  "driver",
+  "whatsapp_number",
+  "column_break_4",
+  "status",
+  "payment_type",
+  "delivery_note_section",
+  "delivery_note_no",
+  "delivery_date",
+  "sales_order_no",
+  "column_break_10",
+  "sales_responsible",
+  "delivery_mode",
+  "customer_section",
+  "customer_code",
+  "customer_name",
+  "customer_phone",
+  "column_break_16",
+  "customer_reference",
+  "delivery_address",
+  "items_section",
+  "items",
+  "azure_section",
+  "source_file",
+  "azure_operation_id",
+  "column_break_23",
+  "raw_azure_json",
+  "tracking_section",
+  "driver_confirmed_at",
+  "delivered_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "LDEL-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver_section",
+   "fieldtype": "Section Break",
+   "label": "Driver Information"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Employee",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "whatsapp_number",
+   "fieldtype": "Data",
+   "label": "WhatsApp Number",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Image Received",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Image Received\nParsed\nAwaiting Driver Confirmation\nConfirmed by Driver\nDelivered - Cash Received\nDelivered - Credit",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "\nCash\nCredit"
+  },
+  {
+   "fieldname": "delivery_note_section",
+   "fieldtype": "Section Break",
+   "label": "Delivery Note Details"
+  },
+  {
+   "fieldname": "delivery_note_no",
+   "fieldtype": "Data",
+   "label": "Delivery Note No",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "sales_order_no",
+   "fieldtype": "Data",
+   "label": "Sales Order No"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_responsible",
+   "fieldtype": "Data",
+   "label": "Sales Responsible"
+  },
+  {
+   "fieldname": "delivery_mode",
+   "fieldtype": "Data",
+   "label": "Delivery Mode"
+  },
+  {
+   "fieldname": "customer_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "customer_phone",
+   "fieldtype": "Data",
+   "label": "Customer Phone"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_reference",
+   "fieldtype": "Data",
+   "label": "Customer Reference"
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Small Text",
+   "label": "Delivery Address"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Landmark Delivery Item"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "azure_section",
+   "fieldtype": "Section Break",
+   "label": "Azure Document Intelligence"
+  },
+  {
+   "fieldname": "source_file",
+   "fieldtype": "Attach Image",
+   "label": "Source File"
+  },
+  {
+   "fieldname": "azure_operation_id",
+   "fieldtype": "Data",
+   "label": "Azure Operation ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "raw_azure_json",
+   "fieldtype": "Code",
+   "label": "Raw Azure JSON",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "tracking_section",
+   "fieldtype": "Section Break",
+   "label": "Tracking"
+  },
+  {
+   "fieldname": "driver_confirmed_at",
+   "fieldtype": "Datetime",
+   "label": "Driver Confirmed At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivered_at",
+   "fieldtype": "Datetime",
+   "label": "Delivered At",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Landmark Ops",
+ "name": "Landmark Delivery Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "delivery_note_no",
+ "track_changes": 1
+}

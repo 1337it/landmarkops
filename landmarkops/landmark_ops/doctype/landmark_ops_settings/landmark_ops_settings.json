@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "creation": "2025-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "azure_section",
+  "azure_endpoint",
+  "azure_api_key",
+  "azure_model_id",
+  "column_break_4",
+  "azure_timeout",
+  "azure_max_retries",
+  "whatsapp_section",
+  "whatsapp_api_base_url",
+  "whatsapp_api_token",
+  "whatsapp_business_number",
+  "column_break_9",
+  "whatsapp_phone_number_id",
+  "integration_section",
+  "driver_link_doctype",
+  "driver_link_fieldname",
+  "column_break_13",
+  "auto_process_images",
+  "send_flow_after_parse"
+ ],
+ "fields": [
+  {
+   "fieldname": "azure_section",
+   "fieldtype": "Section Break",
+   "label": "Azure Document Intelligence"
+  },
+  {
+   "fieldname": "azure_endpoint",
+   "fieldtype": "Data",
+   "label": "Azure Endpoint",
+   "description": "e.g., https://YOUR-RESOURCE.cognitiveservices.azure.com/"
+  },
+  {
+   "fieldname": "azure_api_key",
+   "fieldtype": "Password",
+   "label": "Azure API Key"
+  },
+  {
+   "default": "prebuilt-document",
+   "fieldname": "azure_model_id",
+   "fieldtype": "Data",
+   "label": "Azure Model ID"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "120",
+   "fieldname": "azure_timeout",
+   "fieldtype": "Int",
+   "label": "Azure Timeout (seconds)"
+  },
+  {
+   "default": "3",
+   "fieldname": "azure_max_retries",
+   "fieldtype": "Int",
+   "label": "Azure Max Retries"
+  },
+  {
+   "fieldname": "whatsapp_section",
+   "fieldtype": "Section Break",
+   "label": "WhatsApp Business API"
+  },
+  {
+   "fieldname": "whatsapp_api_base_url",
+   "fieldtype": "Data",
+   "label": "WhatsApp API Base URL",
+   "description": "e.g., https://graph.facebook.com/v18.0"
+  },
+  {
+   "fieldname": "whatsapp_api_token",
+   "fieldtype": "Password",
+   "label": "WhatsApp API Token"
+  },
+  {
+   "fieldname": "whatsapp_business_number",
+   "fieldtype": "Data",
+   "label": "WhatsApp Business Number",
+   "description": "The phone number in international format, e.g., +971501234567"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "whatsapp_phone_number_id",
+   "fieldtype": "Data",
+   "label": "WhatsApp Phone Number ID",
+   "description": "The WhatsApp Business Phone Number ID from Facebook"
+  },
+  {
+   "fieldname": "integration_section",
+   "fieldtype": "Section Break",
+   "label": "Integration Settings"
+  },
+  {
+   "default": "Whatsapp Contact Link",
+   "fieldname": "driver_link_doctype",
+   "fieldtype": "Link",
+   "label": "Driver Link DocType",
+   "options": "DocType"
+  },
+  {
+   "default": "driver",
+   "fieldname": "driver_link_fieldname",
+   "fieldtype": "Data",
+   "label": "Driver Link Fieldname",
+   "description": "Field name in Whatsapp Contact Link that points to Driver/Employee"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_process_images",
+   "fieldtype": "Check",
+   "label": "Auto Process Images with Azure"
+  },
+  {
+   "default": "1",
+   "fieldname": "send_flow_after_parse",
+   "fieldtype": "Check",
+   "label": "Send WhatsApp Flow After Parsing"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Landmark Ops",
+ "name": "Landmark Ops Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

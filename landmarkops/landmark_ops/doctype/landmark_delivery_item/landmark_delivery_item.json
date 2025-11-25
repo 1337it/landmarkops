@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "creation": "2025-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sr_no",
+  "item_id",
+  "flexi_code",
+  "item_name",
+  "item_name_short",
+  "unit",
+  "qty",
+  "cartons"
+ ],
+ "fields": [
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Sr No",
+   "width": "50px"
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item ID",
+   "width": "120px"
+  },
+  {
+   "fieldname": "flexi_code",
+   "fieldtype": "Data",
+   "label": "Flexi Code",
+   "width": "100px"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "width": "250px"
+  },
+  {
+   "fieldname": "item_name_short",
+   "fieldtype": "Data",
+   "label": "Item Name (Short)",
+   "description": "Shortened item name for WhatsApp display",
+   "width": "200px"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit",
+   "width": "60px"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "width": "80px"
+  },
+  {
+   "fieldname": "cartons",
+   "fieldtype": "Float",
+   "label": "Cartons",
+   "width": "80px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Landmark Ops",
+ "name": "Landmark Delivery Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
